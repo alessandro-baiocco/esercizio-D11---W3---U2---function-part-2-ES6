@@ -3,8 +3,8 @@
   prima e gli ultimi 3 della seconda. Converti la stringa risultante in maiuscolo e mostrala con un console.log().
 */
 const firstAndThirdest = function (str1, str2) {
-  firstTWO = str1.slice(0, 2);
-  lastThree = str2.slice(-3);
+  const firstTWO = str1.slice(0, 2);
+  const lastThree = str2.slice(-3);
   return firstTWO + lastThree;
 };
 
@@ -47,7 +47,7 @@ console.log("-------------------------------------");
 /* ESERCIZIO 6 (map)
   Scrivi una funzione che, dato un array di soli numeri e un numero n come parametri, ritorni un secondo array con tutti i valori del precedente incrementati di n
 */
-genericNumericArrayExe6 = [4, 12, 37, 11, 21];
+const genericNumericArrayExe6 = [4, 12, 37, 11, 21];
 const plusOneArray = genericNumericArrayExe6.map((n) => n + 1);
 
 console.log("esercizio 6 :", plusOneArray);
@@ -231,7 +231,7 @@ console.log("-------------------------------------");
   Scrivi una funzione per ottenere dall'array fornito uno specifico film (la funzione riceve un imdbID come parametro).
 */
 
-idMovie = "tt4154756";
+const idMovie = "tt4154756";
 const findMovie = movies.find((movies) => idMovie === movies.imdbID);
 
 console.log("esercizio 14", findMovie);
@@ -248,3 +248,4 @@ const firstMovieOnThisYears = movies.findIndex((movies) => {
 });
 
 console.log(firstMovieOnThisYears);
+console.log(arrayOfMoviesLast);
